@@ -11,12 +11,16 @@ function ListedToDos(): JSX.Element {
     }
     return (
         <>
-            <input type="text" placeholder="Enter To-Do" onChange={(e) => {
-            setTypedToDo(e.target.value);
-          }}></input>
+            <input type="text" placeholder="Enter To-Do"
+                onChange={(e) => { setTypedToDo(e.target.value) }}></input>
             <button onClick={handleToDoSubmission}>Submit To-Do</button>
-            <li>
-            </li>
+            <ul className="todoList">
+                {toDoList.map(todo => {
+                    if (toDoList.length > 0) {
+                        return (<><input type="checkbox"></input><span>{todo}</span><hr/></>)
+                    }
+                })}
+            </ul>
         </>
     )
 }
