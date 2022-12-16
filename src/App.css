@@ -1,0 +1,19 @@
+.todoBod {
+  font-size: large;
+  padding: 6px;
+  font-weight: 600;
+}
+
+.todoBox {
+  padding: 10px;
+  color: cornflowerblue;
+}
+
+.delbtn {
+  background-color: red;
+  color: cornsilk;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  font-size: small;
+  padding: 5px;
+}
